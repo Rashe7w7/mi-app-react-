@@ -3,13 +3,13 @@ import Clima from './components/Clima'
 import EstadoPedido from './components/EstadoPedido'
 import MensajeBienvenida from './components/MensajeBienvenida'
 import Habilidades from './components/listahabilidades'
-import './index.css'
+import './Lab2index.css'
 import Productos from './components/productos'
 import ListaTareas from './components/listatarea'
 import Tarjeta from './components/Tarjeta'
 import  Dashboard from './components/dashboard'
 
-function App() {
+function AppLab2() {
   return (
     <>
 <section className="pantalla">
@@ -75,7 +75,7 @@ function App() {
 }
   
 
-export default App
+export default AppLab2
 
     
       
