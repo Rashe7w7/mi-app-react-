@@ -10,7 +10,6 @@ export default function useNotificacion(duracion = 3000) {
       mensaje,
       tipo,
     };
-
     setNotificacion(nueva);
   };
 
@@ -21,7 +20,6 @@ export default function useNotificacion(duracion = 3000) {
   useEffect(() => {
     if (!notificacion) return;
 
-    // limpiar timeout anterior si existe
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }

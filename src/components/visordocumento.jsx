@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../lab4index.css";
+
 
 export default function VisorDocumento() {
   const [contador, setContador] = useState(0);

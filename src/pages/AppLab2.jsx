@@ -1,13 +1,13 @@
-import Perfil from './components/perfil'
-import Clima from './components/Clima'
-import EstadoPedido from './components/EstadoPedido'
-import MensajeBienvenida from './components/MensajeBienvenida'
-import Habilidades from './components/listahabilidades'
+import Perfil from '../components/perfil'
+import Clima from '../components/Clima'
+import EstadoPedido from '../components/EstadoPedido'
+import MensajeBienvenida from '../components/MensajeBienvenida'
+import Habilidades from '../components/listahabilidades'
 import './Lab2index.css'
-import Productos from './components/productos'
-import ListaTareas from './components/listatarea'
-import Tarjeta from './components/Tarjeta'
-import  Dashboard from './components/dashboard'
+import Productos from '../components/productos'
+import ListaTareas from '../components/listatarea'
+import Tarjeta from '../components/Tarjeta'
+import  Dashboard from '../components/dashboard'
 
 function AppLab2() {
   return (

@@ -1,13 +1,13 @@
 
 
 import "./lab3index.css";
-import Alerta from "./components/Alerta";
-import Acordeon from "./components/Acordeon";
-import Modal from "./components/Modal";
-import BotonAccion from "./components/BotonAccion";
-import Contador from "./components/Contador";
-import ListaContactos from "./components/ListaContactos";
-import FormularioEvento from "./components/formularioeventos";
+import Alerta from "../components/Alerta";
+import Acordeon from "../components/Acordeon";
+import Modal from "../components/Modal";
+import BotonAccion from "../components/BotonAccion";
+import Contador from "../components/Contador";
+import ListaContactos from "../components/ListaContactos";
+import FormularioEvento from "../components/formularioeventos";
 import { useState } from "react";
 
 function Lab3() {

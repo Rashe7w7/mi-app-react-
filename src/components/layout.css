@@ -1,0 +1,163 @@
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.layout-header {
+  background: #fdd835;  
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 4px 6px #0000001a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #f9a825;
+}
+
+.layout-header h1 {
+  color: #202124; 
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+
+.layout-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.layout-nav a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.layout-nav a:hover {
+  color: #202124;
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.layout-nav a.active {
+  color: #202124;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+
+.layout-counter {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: #202124;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.layout-counter span {
+  font-weight: 600;
+}
+
+
+.layout-main {
+  flex: 1;
+  padding: 2rem;
+  background: #f8f9fa;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.layout-footer {
+  background: #202124;
+  color: #a0aec0;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.layout-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .layout-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .layout-header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .layout-nav {
+    justify-content: center;
+  }
+
+  .layout-nav a {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    flex: 1;
+    text-align: center;
+    min-width: 80px;
+  }
+
+  .layout-counter {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .layout-main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .layout-nav a {
+    width: 100%;
+    text-align: center;
+    flex: none;
+  }
+
+  .layout-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .layout-counter {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

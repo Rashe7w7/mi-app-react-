@@ -1,6 +1,6 @@
 import useNotificacion from "../hooks/useNotificacion";
 import useLocalStorage from "../hooks/useLocalStorage";
-import "../lab4index.css";
+
 export default function Ejercicio4() {
   const [nombre, setNombre] = useLocalStorage("nombre", "");
   const { notificacion, mostrar, cerrar } = useNotificacion(3000);
